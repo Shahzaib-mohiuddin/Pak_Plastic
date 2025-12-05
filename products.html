@@ -18,6 +18,7 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products.css">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -58,197 +59,206 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <!-- Products Section with Gradient Background -->
+    <section class="products-section-modern">
+        <!-- Gradient Background -->
+        <div class="products-bg-gradient"></div>
+        
         <div class="container">
-            <h1>Our Products & Services</h1>
-            <p>Wide range of high-quality plastic products designed for various industries</p>
+            <!-- Page Header -->
+            <div class="products-header">
+                <span class="section-tag">What We Offer</span>
+                <h1>Product Categories</h1>
+                <p>Discover our comprehensive range of premium plastic products designed for durability and sustainability</p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">All Products</button>
+                <button class="filter-btn" data-category="industrial">Industrial</button>
+                <button class="filter-btn" data-category="household">Household</button>
+                <button class="filter-btn" data-category="safety">Safety</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid-modern">
+                <!-- Plastic Pallets -->
+                <div class="product-card-modern" data-category="industrial" onclick="openProductPopup('plastic-pallets')">
+                    <div class="card-glow"></div>
+                    <div class="product-image-modern">
+                        <img src="images/plastic_pallets.png" alt="Plastic Pallets" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder-modern">📋</div>
+                    </div>
+                    <div class="product-info-modern">
+                        <h3>Plastic Pallets</h3>
+                        <p>Heavy-duty, reusable pallets for efficient logistics and warehouse operations</p>
+                    </div>
+                </div>
+
+                <!-- House Hold -->
+                <div class="product-card-modern" data-category="household" onclick="openProductDetail('household')">
+                    <div class="card-glow"></div>
+                    <div class="product-image-modern">
+                        <img src="images/houshold.png" alt="House Hold" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder-modern">🏠</div>
+                    </div>
+                    <div class="product-info-modern">
+                        <h3>Household Products</h3>
+                        <p>Quality plastic products for everyday convenience and organization</p>
+                    </div>
+                </div>
+
+                <!-- Container Boxes -->
+                <div class="product-card-modern" data-category="industrial" onclick="openProductDetail('container-boxes')">
+                    <div class="card-glow"></div>
+                    <div class="product-image-modern">
+                        <img src="images/cantainerbox.png" alt="Container Boxes" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder-modern">📦</div>
+                    </div>
+                    <div class="product-info-modern">
+                        <h3>Container Boxes</h3>
+                        <p>Versatile storage containers for industrial and commercial applications</p>
+                    </div>
+                </div>
+
+                <!-- Big Bins -->
+                <div class="product-card-modern" data-category="industrial" onclick="openProductDetail('big-bins')">
+                    <div class="card-glow"></div>
+                    <div class="product-image-modern">
+                        <img src="images/bigbin.png" alt="Big Bins" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder-modern">🗂️</div>
+                    </div>
+                    <div class="product-info-modern">
+                        <h3>Big Bins</h3>
+                        <p>Large capacity waste bins for municipal and industrial waste management</p>
+                    </div>
+                </div>
+
+                <!-- Road Barriers -->
+                <div class="product-card-modern" data-category="safety" onclick="openProductDetail('road-barriers')">
+                    <div class="card-glow"></div>
+                    <div class="product-image-modern">
+                        <img src="images/barrier.png" alt="Road Barriers" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder-modern">🚧</div>
+                    </div>
+                    <div class="product-info-modern">
+                        <h3>Road Barriers</h3>
+                        <p>Durable traffic safety barriers for construction and road management</p>
+                    </div>
+                </div>
+
+                <!-- Bottle Caps -->
+                <div class="product-card-modern" data-category="industrial" onclick="openProductDetail('bottle-caps')">
+                    <div class="card-glow"></div>
+                    <div class="product-image-modern">
+                        <img src="images/bottlecaps.png" alt="Bottle Caps" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder-modern">🧴</div>
+                    </div>
+                    <div class="product-info-modern">
+                        <h3>Bottle Caps</h3>
+                        <p>Premium quality bottle caps for beverage and packaging industries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CTA Section -->
+        <div class="products-cta-section">
+            <div class="container">
+                <div class="cta-wrapper">
+                    <!-- Main CTA -->
+                    <div class="products-cta-content">
+                        <div class="cta-icon">💼</div>
+                        <h2>Ready to Start Your Project?</h2>
+                        <p>Get premium plastic products manufactured with precision and delivered on time. From concept to production, we've got you covered.</p>
+                        <div class="products-cta-buttons">
+                            <a href="contact.html" class="btn-products-cta-primary">
+                                <span>Get Free Quote</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="tel:+971544933295" class="btn-products-cta-secondary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                                <span>+971 54 493 3295</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="products-faq-section">
+                        <h3>Frequently Asked Questions</h3>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>What is your minimum order quantity?</span>
+                                    <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9l6 6 6-6"/>
+                                    </svg>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Our MOQ varies by product type. For standard items, it's typically 500-1000 pieces. For custom products, we can work with smaller quantities starting from 100 pieces.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>How long does production take?</span>
+                                    <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9l6 6 6-6"/>
+                                    </svg>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Standard products: 7-14 days. Custom products: 2-4 weeks depending on complexity. Rush orders available with 24-48 hour turnaround for urgent needs.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>Do you offer custom colors and designs?</span>
+                                    <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9l6 6 6-6"/>
+                                    </svg>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Yes! We offer full customization including colors, logos, dimensions, and special features. Our design team can help bring your vision to life.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>What materials do you use?</span>
+                                    <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9l6 6 6-6"/>
+                                    </svg>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>We use high-grade plastics including HDPE, PP, PVC, and recycled materials. All materials are food-safe and meet international quality standards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section class="products">
-        <div class="container">
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-icon">🧴</div>
-                    <h3>Bottle Caps</h3>
-                    <p>High-quality bottle caps for various industries including beverage, pharmaceutical, and cosmetic sectors. Manufactured with precision using our advanced Electric Injection Molding technology.</p>
-                    <ul class="product-features">
-                        <li>Food-grade materials</li>
-                        <li>Various sizes and colors</li>
-                        <li>Tamper-evident options</li>
-                        <li>Custom branding available</li>
-                    </ul>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-icon">📦</div>
-                    <h3>Plastic Containers</h3>
-                    <p>Durable containers for storage and packaging solutions across multiple industries. Perfect for food storage, industrial applications, and retail packaging.</p>
-                    <ul class="product-features">
-                        <li>Multiple capacity options</li>
-                        <li>Stackable design</li>
-                        <li>Chemical resistant</li>
-                        <li>Easy to clean</li>
-                    </ul>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-icon">🗂️</div>
-                    <h3>Big Plastic Bins</h3>
-                    <p>Large-capacity bins designed for industrial use, waste management, and bulk storage. Built to withstand heavy-duty applications.</p>
-                    <ul class="product-features">
-                        <li>Heavy-duty construction</li>
-                        <li>Weather resistant</li>
-                        <li>Easy handling design</li>
-                        <li>Various sizes available</li>
-                    </ul>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-icon">📋</div>
-                    <h3>Plastic Pallets</h3>
-                    <p>Sturdy pallets for logistics and warehousing operations. Lightweight yet durable alternative to wooden pallets with superior hygiene properties.</p>
-                    <ul class="product-features">
-                        <li>Standard and custom sizes</li>
-                        <li>Four-way entry design</li>
-                        <li>Hygienic and easy to clean</li>
-                        <li>Long-lasting durability</li>
-                    </ul>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-icon">🚧</div>
-                    <h3>Road Barriers</h3>
-                    <p>Safety barriers for traffic management and construction sites. Designed to meet international safety standards for road and construction applications.</p>
-                    <ul class="product-features">
-                        <li>High visibility colors</li>
-                        <li>Impact resistant</li>
-                        <li>Interlocking system</li>
-                        <li>UV stabilized</li>
-                    </ul>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-icon">🏠</div>
-                    <h3>Household Products</h3>
-                    <p>Everyday plastic items for home use including storage solutions, organizers, and utility products designed for modern households.</p>
-                    <ul class="product-features">
-                        <li>BPA-free materials</li>
-                        <li>Ergonomic design</li>
-                        <li>Easy maintenance</li>
-                        <li>Attractive aesthetics</li>
-                    </ul>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-icon">🍽️</div>
-                    <h3>Kitchenware</h3>
-                    <p>Food-safe plastic kitchenware products including containers, utensils, and storage solutions for commercial and residential kitchens.</p>
-                    <ul class="product-features">
-                        <li>Food-grade certified</li>
-                        <li>Microwave safe options</li>
-                        <li>Dishwasher friendly</li>
-                        <li>Stain resistant</li>
-                    </ul>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-icon">⚙️</div>
-                    <h3>Specialized Items</h3>
-                    <p>Custom plastic solutions for specific industry needs. We work closely with clients to develop tailored products that meet exact specifications.</p>
-                    <ul class="product-features">
-                        <li>Custom design service</li>
-                        <li>Prototype development</li>
-                        <li>Technical consultation</li>
-                        <li>Quality assurance</li>
-                    </ul>
+    <!-- Product Popup Modal -->
+    <div class="product-popup-overlay" id="productPopup">
+        <div class="product-popup-modal">
+            <div class="popup-header">
+                <h2 id="popup-title">Select Product</h2>
+                <button class="popup-close" onclick="closeProductPopup()">&times;</button>
+            </div>
+            <div class="popup-content">
+                <div class="popup-products-grid" id="popup-products-grid">
+                    <!-- Products will be populated by JavaScript -->
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Product Categories -->
-    <section class="product-categories">
-        <div class="container">
-            <div class="section-header">
-                <h2>Product Categories</h2>
-                <p>Organized by industry and application</p>
-            </div>
-            
-            <div class="categories-grid">
-                <div class="category-card">
-                    <h3>Industrial Products</h3>
-                    <ul>
-                        <li>Plastic Pallets</li>
-                        <li>Big Plastic Bins</li>
-                        <li>Industrial Containers</li>
-                        <li>Material Handling Solutions</li>
-                    </ul>
-                </div>
-                
-                <div class="category-card">
-                    <h3>Consumer Products</h3>
-                    <ul>
-                        <li>Household Items</li>
-                        <li>Kitchenware</li>
-                        <li>Storage Solutions</li>
-                        <li>Utility Products</li>
-                    </ul>
-                </div>
-                
-                <div class="category-card">
-                    <h3>Commercial Products</h3>
-                    <ul>
-                        <li>Bottle Caps</li>
-                        <li>Packaging Containers</li>
-                        <li>Food Service Items</li>
-                        <li>Retail Solutions</li>
-                    </ul>
-                </div>
-                
-                <div class="category-card">
-                    <h3>Safety & Infrastructure</h3>
-                    <ul>
-                        <li>Road Barriers</li>
-                        <li>Traffic Management</li>
-                        <li>Construction Safety</li>
-                        <li>Public Safety Items</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quality Assurance -->
-    <section class="quality-assurance">
-        <div class="container">
-            <div class="section-header">
-                <h2>Quality Assurance</h2>
-                <p>Every product meets our stringent quality standards</p>
-            </div>
-            
-            <div class="quality-features">
-                <div class="quality-item">
-                    <h3>🔬 Material Testing</h3>
-                    <p>Rigorous testing of raw materials and finished products</p>
-                </div>
-                <div class="quality-item">
-                    <h3>📏 Precision Manufacturing</h3>
-                    <p>Electric Injection Molding ensures consistent quality</p>
-                </div>
-                <div class="quality-item">
-                    <h3>✅ Quality Control</h3>
-                    <p>Multi-stage quality control throughout production</p>
-                </div>
-                <div class="quality-item">
-                    <h3>📋 Compliance</h3>
-                    <p>Meeting international standards and regulations</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -287,5 +297,184 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <script>
+        // Product category data with sub-products
+        const productCategories = {
+            'plastic-pallets': {
+                title: 'Plastic Pallets',
+                products: [
+                    { 
+                        id: 'plastic-pallet-1', 
+                        name: 'Plastic Pallet 1', 
+                        description: '113cm width x 136cm length', 
+                        image: 'images/1.png',
+                        icon: '📋' 
+                    },
+                    { 
+                        id: 'plastic-pallet-2', 
+                        name: 'Plastic Pallet 2', 
+                        description: 'Standard size plastic pallet', 
+                        image: 'images/Add a heading.png',
+                        icon: '📦' 
+                    }
+                ]
+            },
+            'household': {
+                title: 'Household Products',
+                products: [
+                    { id: 'household-storage', name: 'Storage Containers', description: 'Multi-purpose storage solutions', icon: '📦' },
+                    { id: 'household-kitchen', name: 'Kitchen Items', description: 'Food-grade kitchen products', icon: '🍽️' }
+                ]
+            },
+            'container-boxes': {
+                title: 'Container Boxes',
+                products: [
+                    { id: 'container-boxes-small', name: 'Small Containers', description: 'Compact storage containers', icon: '📦' },
+                    { id: 'container-boxes-large', name: 'Large Containers', description: 'Industrial size containers', icon: '📋' }
+                ]
+            },
+            'big-bins': {
+                title: 'Big Bins',
+                products: [
+                    { id: 'big-bins-waste', name: 'Waste Bins', description: 'Municipal waste management', icon: '🗂️' },
+                    { id: 'big-bins-recycling', name: 'Recycling Bins', description: 'Eco-friendly recycling solutions', icon: '♻️' }
+                ]
+            },
+            'road-barriers': {
+                title: 'Road Barriers',
+                products: [
+                    { id: 'road-barriers-standard', name: 'Standard Barriers', description: 'Traffic control barriers', icon: '🚧' },
+                    { id: 'road-barriers-heavy', name: 'Heavy Duty Barriers', description: 'Construction site barriers', icon: '⚠️' }
+                ]
+            },
+            'bottle-caps': {
+                title: 'Bottle Caps',
+                products: [
+                    { id: 'bottle-caps-standard', name: 'Standard Caps', description: 'Regular bottle caps', icon: '🧴' },
+                    { id: 'bottle-caps-sports', name: 'Sports Caps', description: 'Pull-push sports caps', icon: '⚽' },
+                    { id: 'bottle-caps-child', name: 'Child-Safe Caps', description: 'Child-resistant caps', icon: '👶' }
+                ]
+            }
+        };
+
+        function openProductPopup(categoryId) {
+            const popup = document.getElementById('productPopup');
+            const popupTitle = document.getElementById('popup-title');
+            const popupGrid = document.getElementById('popup-products-grid');
+            
+            const category = productCategories[categoryId];
+            if (!category) return;
+            
+            // Set popup title
+            popupTitle.textContent = category.title;
+            
+            // Clear and populate products
+            popupGrid.innerHTML = '';
+            category.products.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'popup-product-card';
+                productCard.onclick = () => selectProduct(product.id);
+                
+                // Check if product has an image, otherwise use icon
+                const imageContent = product.image ? 
+                    `<img src="${product.image}" alt="${product.name}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                     <div class="popup-product-icon" style="display: none;">${product.icon}</div>` :
+                    `<div class="popup-product-icon">${product.icon}</div>`;
+                
+                productCard.innerHTML = `
+                    <div class="popup-product-image">
+                        ${imageContent}
+                    </div>
+                    <h4>${product.name}</h4>
+                    <p>${product.description}</p>
+                `;
+                
+                popupGrid.appendChild(productCard);
+            });
+            
+            // Show popup
+            popup.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProductPopup() {
+            const popup = document.getElementById('productPopup');
+            popup.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function selectProduct(productId) {
+            closeProductPopup();
+            window.location.href = `product-detail.html?product=${productId}`;
+        }
+
+        function openProductDetail(productId) {
+            window.location.href = `product-detail.html?product=${productId}`;
+        }
+
+        // Close popup when clicking outside
+        document.addEventListener('click', function(e) {
+            const popup = document.getElementById('productPopup');
+            if (e.target === popup) {
+                closeProductPopup();
+            }
+        });
+
+        // Close popup with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeProductPopup();
+            }
+        });
+
+        // Category Filter Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card-modern');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const category = this.getAttribute('data-category');
+
+                    productCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                            card.style.animation = 'fadeInUp 0.6s ease forwards';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+        // FAQ Accordion Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', function() {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all FAQ items
+                    faqItems.forEach(faq => {
+                        faq.classList.remove('active');
+                    });
+                    
+                    // Open clicked item if it wasn't active
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

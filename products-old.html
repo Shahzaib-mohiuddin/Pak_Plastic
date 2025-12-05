@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - PAK PLASTIC INDUSTRY L.L.C | High-Quality Plastic Products UAE</title>
+    <meta name="description" content="Explore our wide range of high-quality plastic products including bottle caps, containers, pallets, road barriers, and specialized items manufactured in UAE.">
+    <meta name="keywords" content="plastic products UAE, bottle caps, plastic containers, plastic pallets, road barriers, kitchenware, household products">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Products - PAK PLASTIC INDUSTRY L.L.C">
+    <meta property="og:description" content="Wide range of high-quality plastic products designed for various industries using sustainable manufacturing.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.pakplasticllc.com/products.html">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>PAK PLASTIC</h2>
+                <span>INDUSTRY L.L.C</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="about.html" class="nav-link">ABOUT US</a></li>
+                <li><a href="products.html" class="nav-link active">PRODUCTS</a></li>
+                <li><a href="technology.html" class="nav-link">TECHNOLOGY</a></li>
+                <li><a href="sustainability.html" class="nav-link">SUSTAINABILITY</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT US</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="products.html" class="btn-catalogue">DOWNLOAD CATALOGUE</a>
+                <div class="search-icon">🔍</div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Industrial plastic packaging solutions</p>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Stackable Crates -->
+                <div class="product-card" onclick="openProductDetail('stackable-crates')">
+                    <div class="product-image">
+                        <img src="images/stackable-crates.png" alt="Stackable crates" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder">📦</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Stackable crates</h3>
+                    </div>
+                </div>
+
+                <!-- Nestable Containers -->
+                <div class="product-card" onclick="openProductDetail('nestable-containers')">
+                    <div class="product-image">
+                        <img src="images/nestable-containers.png" alt="Nestable containers" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder">🗂️</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nestable containers</h3>
+                    </div>
+                </div>
+
+                <!-- Foldable Containers -->
+                <div class="product-card" onclick="openProductDetail('foldable-containers')">
+                    <div class="product-image">
+                        <img src="images/foldable-containers.png" alt="Foldable containers" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder">📁</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Foldable containers</h3>
+                    </div>
+                </div>
+
+                <!-- Plastic Pallets -->
+                <div class="product-card" onclick="openProductDetail('plastic-pallets')">
+                    <div class="product-image">
+                        <img src="images/plastic-pallets.png" alt="Plastic pallets" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder">📋</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Plastic pallets</h3>
+                    </div>
+                </div>
+
+                <!-- Large Collapsible Containers -->
+                <div class="product-card" onclick="openProductDetail('large-collapsible-containers')">
+                    <div class="product-image">
+                        <img src="images/large-collapsible-containers.png" alt="Large collapsible containers" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder">📦</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Large collapsible containers</h3>
+                    </div>
+                </div>
+
+                <!-- Large Non-Collapsible Containers -->
+                <div class="product-card" onclick="openProductDetail('large-non-collapsible-containers')">
+                    <div class="product-image">
+                        <img src="images/large-non-collapsible-containers.png" alt="Large non-collapsible containers" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder">🗃️</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Large non-collapsible containers</h3>
+                    </div>
+                </div>
+
+                <!-- SK Shelf Crates -->
+                <div class="product-card" onclick="openProductDetail('sk-shelf-crates')">
+                    <div class="product-image">
+                        <img src="images/sk-shelf-crates.png" alt="SK shelf crates" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder">📚</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>SK shelf crates</h3>
+                    </div>
+                </div>
+
+                <!-- Logic Store Warehouse Crates -->
+                <div class="product-card" onclick="openProductDetail('logic-store-warehouse-crates')">
+                    <div class="product-image">
+                        <img src="images/logic-store-warehouse-crates.png" alt="Logic Store warehouse crates" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder">🏪</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Logic Store warehouse crates</h3>
+                    </div>
+                </div>
+
+                <!-- Waste Containers -->
+                <div class="product-card" onclick="openProductDetail('waste-containers')">
+                    <div class="product-image">
+                        <img src="images/waste-containers.png" alt="Waste containers" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="product-placeholder">🗑️</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Waste containers</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PAK PLASTIC INDUSTRY L.L.C</h3>
+                    <p>Leading the region in sustainable plastic manufacturing with innovative Electric Injection Molding technology.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Warehouse-C8, Mohammed Bin Zayed<br>
+                    Umm Al Quwain, UAE</p>
+                    <p>Phone: +971 54 4933295</p>
+                    <p>Email: sales@pakplasticllc.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 PAK PLASTIC INDUSTRY L.L.C. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        function openProductDetail(productId) {
+            window.location.href = `product-detail.html?product=${productId}`;
+        }
+    </script>
+</body>
+</html>
